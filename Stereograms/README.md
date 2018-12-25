@@ -2,7 +2,7 @@
 
 The goal of this project was to turn a depth map into a stereogram. A stereogram is a single image that creates the illusion of a 3D image when seen correctly for example:
 
-![N|]()
+![N|Example](https://github.com/connorkutz/Computer-Vision/raw/master/Stereograms/example.jpg)
 
 Though the colorization of my stereograms is not as sophisticated as above, it follows the same principle. The algorithm used is as follows:
   Stereogram{
@@ -22,16 +22,16 @@ When creating a distance(disp), I found that some equations work better for cert
 
 here, *disp = 100 + d/2* :
 
-![N|First]()
+![N|Shark Depth Map](https://github.com/connorkutz/Computer-Vision/raw/master/Stereograms/sharkdm.jpg)
 
-![N|First]()
+![N|Shark Stereogram](https://github.com/connorkutz/Computer-Vision/raw/master/Stereograms/sharksg.jpg)
 
 Here, *disp = 140 + d/8*:
 
-![N|First]()
-![N|First]()
-![N|First]()
-![N|First]()
+![N|Mountain Depth Map](https://github.com/connorkutz/Computer-Vision/raw/master/Stereograms/mountaindm.jpg)
+![N|Mountain Stereogram](https://github.com/connorkutz/Computer-Vision/raw/master/Stereograms/mountiansg.jpg)
+![N|Cube Depth Map](https://github.com/connorkutz/Computer-Vision/raw/master/Stereograms/sharkdm.jpg)
+![N|Cube Stereogram](https://github.com/connorkutz/Computer-Vision/raw/master/Stereograms/sharksg.jpg)
 
 For a bonus, this same effect works for videos:
 
@@ -39,5 +39,5 @@ The algorithm is as follows:
   for each frame, f, in the video
     sg[f] = Stereogram(f)
     
-![N|First]()
-![N|First]()
+![N|First](https://github.com/connorkutz/Computer-Vision/raw/master/Stereograms/gifdm.gif)
+![N|First](https://github.com/connorkutz/Computer-Vision/raw/master/Stereograms/gifsg.gif)
